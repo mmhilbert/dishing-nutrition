@@ -9,34 +9,34 @@ export const Navigation = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <img
-                alt="Your Company"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-                className="h-8 w-auto"
+                alt="dishing nutrition logo"
+                src='../../public/images/dishing-nutrition-logo.png'
+                className="h-12 w-auto"
               />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                 <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">
-                  Dashboard
+                  Blog
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
-                  Team
+                  About Me
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
-                  Projects
+                 Work With Me
                 </a>
                 <a
                   href="#"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
-                  Calendar
+                  Patient Portal
                 </a>
               </div>
             </div>
@@ -108,28 +108,28 @@ export const Navigation = () => {
             href="#"
             className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
           >
-            Dashboard
+            Blog
           </DisclosureButton>
           <DisclosureButton
             as="a"
             href="#"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
-            Team
+            About Me
           </DisclosureButton>
           <DisclosureButton
             as="a"
             href="#"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
-            Projects
+            Work With Me
           </DisclosureButton>
           <DisclosureButton
             as="a"
             href="#"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
-            Calendar
+            Patient Portal
           </DisclosureButton>
         </div>
         <div className="border-t border-gray-700 pb-3 pt-4">

@@ -11,8 +11,8 @@ function App() {
     <>
     <Navigation />
     <main className='bg-cream h-full'>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
+      <h1 className="text-3xl font-bold">
+        Dishing Nutrition
       </h1>
     </main>
      

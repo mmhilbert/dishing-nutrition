@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+                sans: ['Playfair Display', ...defaultTheme.fontFamily.sans],
+            },
       colors: {
         eucalyptus:'#5B7769',
         tiki: '#C66E4D',
