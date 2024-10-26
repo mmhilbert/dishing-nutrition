@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Navigation } from './components/Navigation'
+import { Footer } from './components/Footer'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,11 +12,10 @@ function App() {
   return (
     <>
     <Navigation />
-    <main className='bg-cream h-full'>
-      <h1 className="text-3xl font-bold">
-        Dishing Nutrition
-      </h1>
-    </main>
+      <main className='bg-cream h-full'>
+        <Outlet />
+      </main>
+    <Footer />
      
     </>
   )

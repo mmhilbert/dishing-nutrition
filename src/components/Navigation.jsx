@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -8,36 +9,42 @@ export const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img
+              {/* <img
                 alt="dishing nutrition logo"
                 src='../../public/images/dishing-nutrition-logo.png'
                 className="h-12 w-auto"
-              />
+              /> */}
+              <h1 className="text-3xl font-bold text-gray-300">
+                Dishing Nutrition
+            </h1>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">
+                <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                  Home
+                </Link>
+                <Link to="/blog" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                   Blog
-                </a>
-                <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
-                  About Me
-                </a>
-                <a
-                  href="#"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                >
+                </Link>
+                <Link to="/about" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                  About
+                </Link>
+                <Link to="/work-with-me" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
                  Work With Me
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/recipes"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                >
+                  Recipes
+                </Link>
+                <Link
+                  to="/patient-portal"
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
                   Patient Portal
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -70,19 +77,19 @@ export const Navigation = () => {
                   className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
                 >
                   <MenuItem>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                    <a to="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                       Your Profile
                     </a>
                   </MenuItem>
                   <MenuItem>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                    <a to="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                       Settings
                     </a>
                   </MenuItem>
                   <MenuItem>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
+                    <Link to="#" className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100">
                       Sign out
-                    </a>
+                    </Link>
                   </MenuItem>
                 </MenuItems>
               </Menu>
@@ -104,29 +111,29 @@ export const Navigation = () => {
         <div className="space-y-1 px-2 pb-3 pt-2">
           {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
           <DisclosureButton
-            as="a"
-            href="#"
+            as="Link"
+            to="#"
             className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
           >
             Blog
           </DisclosureButton>
           <DisclosureButton
-            as="a"
-            href="#"
+            as="Link"
+            to="#"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
             About Me
           </DisclosureButton>
           <DisclosureButton
-            as="a"
-            href="#"
+            as="Link"
+            to="#"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
             Work With Me
           </DisclosureButton>
           <DisclosureButton
-            as="a"
-            href="#"
+            as="Link"
+            to="#"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
             Patient Portal
@@ -156,22 +163,22 @@ export const Navigation = () => {
           </div>
           <div className="mt-3 space-y-1 px-2">
             <DisclosureButton
-              as="a"
-              href="#"
+              as="Link"
+              to="#"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
             >
               Your Profile
             </DisclosureButton>
             <DisclosureButton
-              as="a"
-              href="#"
+              as="Link"
+              to="#"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
             >
               Settings
             </DisclosureButton>
             <DisclosureButton
-              as="a"
-              href="#"
+              as="Link"
+              to="#"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
             >
               Sign out
