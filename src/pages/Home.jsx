@@ -17,10 +17,11 @@ const Home = () => {
             </div>
 
             <div className="py-8 flex flex-wrap justify-center">
-                    <div className=" w-2/3 sm:-mr-6 sm:w-1/2  md:w-1/3 lg:w-1/4 ">
+                    
+                    <div className="w-2/3 sm:-mr-6 sm:w-1/2  md:w-1/3 lg:w-1/4 ">
                         <img src={portrait} />
                     </div>
-                    <div className="bg-blush px-12 py-8 -mt-8 w-full sm:my-auto sm:-ml-6 sm:w-1/2 md:w-1/3 lg:w-1/4 ">
+                    <div className="bg-tiki px-12 py-8 mt-8 w-full sm:my-auto sm:w-1/2">
                         <p className='text-white text-6xl font-bold mb-4'>About</p>
                         <p className="text-white mb-4">
                         Health and wellness starts with what we put in our bodies, 

@@ -21,27 +21,27 @@ export const Navigation = () => {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-eucalyptus hover:text-white">
                   Home
                 </Link>
-                <Link to="/blog" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                <Link to="/blog" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-eucalyptus hover:text-white">
                   Blog
                 </Link>
-                <Link to="/about" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                <Link to="/about" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-eucalyptus hover:text-white">
                   About
                 </Link>
-                <Link to="/work-with-me" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+                <Link to="/work-with-me" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-eucalyptus hover:text-white">
                  Work With Me
                 </Link>
                 <Link
                   to="/recipes"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-eucalyptus hover:text-white"
                 >
                   Recipes
                 </Link>
                 <Link
                   to="/patient-portal"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-eucalyptus hover:text-white"
                 >
                   Patient Portal
                 </Link>
